@@ -14,7 +14,7 @@
         android:layout_height="144dp"
         android:layout_marginBottom="24dp"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/ontimelogo_background" />
+        app:srcCompat="@drawable/ontime_logo" />
 
     <TextView android:id="@+id/mainWelcome"
         android:layout_width="fill_parent"
@@ -24,7 +24,8 @@
         android:gravity="center"
         android:textSize="32dip"/>
 
-    <Button android:id="@+id/mainChooseAccount"
+    <Button
+        android:id="@+id/mainChooseAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
