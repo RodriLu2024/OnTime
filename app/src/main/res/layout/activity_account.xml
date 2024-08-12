@@ -41,6 +41,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
             <EditText android:id="@+id/accountPassword"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -64,13 +65,14 @@
             app:layout_constraintTop_toBottomOf="@+id/accountPassword"
             app:layout_constraintVertical_bias="0.2" />
 
-        <TextView android:id="@+id/accountSignup"
+        <TextView
+            android:id="@+id/accountSignup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="No account yet? Create one"
             android:gravity="center"
-            android:textSize="16dip"/>
+            android:text="No account yet? Create one"
+            android:textSize="16dip" />
 
     </LinearLayout>
 </ScrollView>

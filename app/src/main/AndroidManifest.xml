@@ -36,15 +36,16 @@
         <activity android:name=".Activities.CompanyCodeActivity" />
         <activity android:name=".Activities.GenerateCodeActivity" />
         <activity android:name=".Activities.EnterCodeActivity" />
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".Activities.MainActivity"
+            android:exported="true">  <!-- or "false" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <service android:name=".Utilities.ProShiftAuthenticatorService">
+        <service android:name=".Utilities.ProShiftAuthenticatorService"
+            android:exported="true"> <!-- or "false" -->
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator" />
             </intent-filter>
