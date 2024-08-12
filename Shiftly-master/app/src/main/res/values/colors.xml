@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <color name="colorPrimary">#006064</color>
+    <color name="colorPrimaryDrawer">#006064</color>
+    <color name="colorPrimaryDark">#00363a</color>
+    <color name="colorPrimaryLight">#00878c</color>
+    <color name="text_color_primary">#ffffff</color>
+    <color name="tablayout_selected">#ffffff</color>
+    <color name="tablayout_unselected">#7dffffff</color>
+    <color name="background_color">#006064</color>
+    <color name="secondary_text_material_dark">#ffffff</color>
+    <color name="orange_color_light">#da562e</color>
+    <color name="orange_color">#BF360C</color>
+    <color name="dark_orange_color">#691d06</color>
+    <color name="members_color">#007105</color>
+    <color name="btv_selected">#00363a</color>
+    <color name="btv_not_selected">#7800363a</color>
+    <color name="div_color">#e4e4e4</color>
+    <color name="silver_color_dark">#e2e2e2</color>
+    <color name="list_item_bg_pressed">#dedede</color>
+    <color name="material_grey">#d9d9d9</color>
+    <color name="calendar_div">#ececec</color>
+    <color name="white">#FFFFFF</color>
+    <color name="com_facebook_button_background_color_focused">#FFFFFF</color>
+
+    <!-- SnackBar -->
+    <color name="snackbar_bg">#e1ffffff</color>
+
+    <!-- Calendar -->
+    <color name="calendar_cyan">#00838f</color>
+    <color name="calendar_light_blue">#64b5f6</color>
+    <color name="calendar_green">#192b19</color>
+    <color name="calendar_yellow">#665e1b</color>
+    <color name="calendar_purple">#3949ab</color>
+    <color name="calendar_orange">#ff8a65</color>
+    <color name="calendar_grey">#374248</color>
+    <color name="calendar_brown">#3949ab</color>
+    <color name="calendar_purple_light">#b388ff</color>
+    <color name="calendar_cyan_light">#00202e</color>
+    <color name="calendar_pink">#f06292</color>
+
+</resources>

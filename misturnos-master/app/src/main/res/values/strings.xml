@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MisTurnos</string>
+    <string name="turnos_prompt">Elige un turno</string>
+
+    <string-array name="turnos_array">
+        <item>Libre</item>
+        <item>Mañanas</item>
+        <item>Tardes</item>
+        <item>Noches</item>
+    </string-array>
+</resources>

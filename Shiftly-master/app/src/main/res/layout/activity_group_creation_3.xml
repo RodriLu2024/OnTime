@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/group_creation_3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gradient_bg"
+        android:focusableInTouchMode="true"
+        tools:context=".GroupCreation1Activity"
+        tools:layout_editor_absoluteY="25dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/group_creation_toolbar_3"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:theme="@style/CustomToolBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/group_days_num_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_num_days_hint"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/group_creation_toolbar_3"
+            app:layout_constraintBottom_toTopOf="@+id/days_num_spinner"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <Spinner
+            android:id="@+id/days_num_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ListItemView"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintTop_toBottomOf="@+id/group_days_num_text"
+            app:layout_constraintBottom_toTopOf="@+id/group_shifts_per_day_num_text"/>
+
+        <TextView
+            android:id="@+id/group_shifts_per_day_num_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_num_shifts_hint"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/days_num_spinner"
+            app:layout_constraintBottom_toTopOf="@+id/shifts_per_day_num_spinner"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <Spinner
+            android:id="@+id/shifts_per_day_num_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ListItemView"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintTop_toBottomOf="@+id/group_shifts_per_day_num_text"
+            app:layout_constraintBottom_toTopOf="@+id/group_employees_per_shift_num_text" />
+
+        <TextView
+            android:id="@+id/group_employees_per_shift_num_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_num_employees_hint"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shifts_per_day_num_spinner"
+            app:layout_constraintBottom_toTopOf="@+id/employees_per_shift_num_spinner"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <Spinner
+            android:id="@+id/employees_per_shift_num_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ListItemView"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintTop_toBottomOf="@+id/group_employees_per_shift_num_text"
+            app:layout_constraintBottom_toTopOf="@+id/starting_hour" />
+
+        <TextView
+            android:id="@+id/starting_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_hour_hint"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employees_per_shift_num_spinner"
+            app:layout_constraintBottom_toTopOf="@+id/starting_hour_spinner"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <Spinner
+            android:id="@+id/starting_hour_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ListItemView"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintTop_toBottomOf="@+id/starting_hour"
+            app:layout_constraintBottom_toTopOf="@+id/shift_len" />
+
+        <TextView
+            android:id="@+id/shift_len"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift_len_hint"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starting_hour_spinner"
+            app:layout_constraintBottom_toTopOf="@+id/shift_len_spinner"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <Spinner
+            android:id="@+id/shift_len_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ListItemView"
+            android:paddingRight="@dimen/spinner_width"
+            android:paddingStart="@dimen/spinner_width"
+            android:paddingLeft="@dimen/spinner_width"
+            android:paddingEnd="@dimen/spinner_width"
+            app:layout_constraintTop_toBottomOf="@+id/shift_len"
+            app:layout_constraintBottom_toTopOf="@+id/continue_button_group_creation_3" />
+
+        <Button
+            android:id="@+id/continue_button_group_creation_3"
+            style="@style/CustomButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:drawableStart="@drawable/round_arrow_forward_ios_white_18"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/continue_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flexibility_chart_height">256dp</dimen>
+    <dimen name="chart_margin_bottom">24dp</dimen>
+    <dimen name="agenda_employee_name_size">20sp</dimen>
+    <dimen name="spinner_radius">3dp</dimen>
+    <dimen name="spinner_stroke_width">1dp</dimen>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="144dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ontimelogo_background" />
+
+    <TextView android:id="@+id/mainWelcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Welcome to OnTime"
+        android:gravity="center"
+        android:textSize="32dip"/>
+
+    <Button android:id="@+id/mainChooseAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Choose Account" />
+
+</LinearLayout>
